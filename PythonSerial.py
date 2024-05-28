@@ -37,7 +37,7 @@ try:
         print(data_string)
         arduino.write(data_string.encode())
         time.sleep(0.05)  # Adjust the sleep time as needed
-        arduino.readline()
+        arduino.readline() #ลบออกแล้วโค้ดใช้ไม่ได้wtf
 except KeyboardInterrupt:
     print("Program interrupted by user.")
 finally:
